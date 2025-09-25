@@ -1,0 +1,134 @@
+/* Home page css */
+
+body {
+  background-color: rgb(73, 0, 169) !important;
+  color: #ffa600 !important;
+}
+
+.home-header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: #ffa600 1px solid;
+}
+
+.home-header button {
+  /* border: none; */
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: #ffa600;
+}
+
+.home-header button:hover {
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
+}
+
+/* guest home page */
+
+.home-guest { 
+    background-color: rgb(77, 63, 63);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+ 
+
+/* Todo css */
+
+.todoContainer {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #fff; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.todoContainer h2 {
+    color: #ffa600;
+    margin: 5px 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.todoContainer input {
+    width: 270px;
+    font-size: 24px;
+    border: none;
+    outline: #ff0000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.todoContainer button {
+    margin: 20px;
+    font-size: 24px;
+    border: none;
+    outline: #ff0000;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.todo {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.todoList {
+    background-color: transparent;
+    width: 80%;
+    /* height: 80vh; */
+    margin: auto;
+    list-style: none;
+    /* overflow: auto; */
+}
+
+.todoList li {
+    margin: 10px auto;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #fff;
+    overflow: auto;
+    line-break: auto;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.todoList li span {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0 5px;
+    margin: 5px;
+    color: #ffa600;
+    font-weight: 700;
+}
+
+.todoList li .del {
+    padding: 0 3px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ff0000;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+}
+
+.todoList li .del:hover {
+    background-color: #ffa600;
+    color: #ff0000;
+}
