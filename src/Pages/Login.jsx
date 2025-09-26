@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { RegisterUser } from "../Context/UserContext";
 import { useNavigate, Link } from "react-router-dom";
+import ".././app.css";
 
 function Login() {
   const { setUser } = useContext(RegisterUser);
@@ -34,7 +35,7 @@ function Login() {
   };
 
   return (
-    <form onSubmit={onLogin}>
+    <form className="log-reg-form" onSubmit={onLogin}>
       <h2>Login Page</h2>
 
       <div className="inputs">
@@ -55,11 +56,11 @@ function Login() {
         />
       </div>
 
-      <div className="inputs">
-        <input type="submit" value="Login" />
+      <div className="inputs submit-p">
+        <input className="submit" type="submit" value="Login" />
         <p>
-          Don't have an account? <Link to="/register">Register</Link>
-        </p>
+        Don't have an account? <Link to="/register">Register</Link>
+      </p>
       </div>
     </form>
   );

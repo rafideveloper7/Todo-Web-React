@@ -2,7 +2,7 @@
 
 body {
   background-color: rgb(73, 0, 169) !important;
-  color: #ffa600 !important;
+  color: #ffa600;
 }
 
 .home-header {
@@ -17,9 +17,15 @@ body {
 .home-header button {
   /* border: none; */
   padding: 10px;
+  margin: 0 10px;
   border-radius: 10px;
   font-weight: 700;
   background-color: #ffa600;
+  color: #ff0000;
+}
+
+.home-header .home-profile-btn {
+    color: #fff;
 }
 
 .home-header button:hover {
@@ -131,4 +137,82 @@ body {
 .todoList li .del:hover {
     background-color: #ffa600;
     color: #ff0000;
+}
+
+
+/* Login Page */
+
+
+.log-reg-form {
+    width: 80%;
+    height: 100%;
+    /* height: auto; */
+    border: 1px solid #fff;
+    margin: 30vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(500px);
+}
+
+.log-reg-form h2 {
+    margin: 10px;
+    font-size: 30px;
+    text-shadow: #ff0000 0 0 5px;
+}
+
+.log-reg-form .inputs {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    font-size: 20px;
+    font-weight: 700;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+}
+.log-reg-form .inputs label {
+    font-size: 20px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.log-reg-form .inputs input {
+    font-size: 20px;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px solid #ffa600;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.log-reg-form .inputs input:focus {
+    border: 2px solid #fff4df;
+
+}
+
+.submit-p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.log-reg-form .inputs .submit {
+    width: 150px;
+    border: none;
+    background-color: #ffa600;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.log-reg-form .inputs p {
+    font-size: 16px;
+}
+
+.log-reg-form .inputs p a {
+    color: #ffa600;
 }

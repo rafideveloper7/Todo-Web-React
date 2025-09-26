@@ -42,7 +42,7 @@ function Register() {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form className="log-reg-form" onSubmit={onSubmit}>
       <h2>Register Page</h2>
 
       <div className="inputs">
@@ -72,8 +72,8 @@ function Register() {
         />
       </div>
 
-      <div className="inputs">
-        <input type="submit" value="Register" />
+      <div className="inputs submit-p">
+        <input className="submit"  type="submit" value="Register" />
         <p>
           Already have an account? <Link to="/login">Login</Link>
         </p>
